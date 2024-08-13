@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magmania:block/magma_block_empty"
+  }
+}
