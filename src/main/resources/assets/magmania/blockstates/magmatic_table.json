@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "filled=0": {
+        "model": "magmania:block/magmatic_table_0"
+    },
+    "filled=1": {
+      "model": "magmania:block/magmatic_table_1"
+    },
+    "filled=2": {
+      "model": "magmania:block/magmatic_table_2"
+    },
+    "filled=3": {
+      "model": "magmania:block/magmatic_table_3"
+    },
+    "filled=4": {
+      "model": "magmania:block/magmatic_table_4"
+    },
+    "filled=5": {
+      "model": "magmania:block/magmatic_table_5"
+    }
+  }
+}

@@ -1,7 +1,13 @@
 {
   "itemGroup.magmania": "Magmania",
+
   "item.magmania.magma_collector": "Empty magma collector",
   "item.magmania.magma_collector_filled": "Filled magma collector",
+  "item.magmania.magma_orb": "Magma orb",
+
+  "itemTooltip.magmania.magma_collector_filled": "Pure magma in your hands",
+  "itemTooltip.magmania.magma_orb": "It's so hot, that you can't hold it.",
+
   "block.magmania.magmatic_stone": "Magmatic stone",
   "block.magmania.magma_block_empty": "Empty magma block"
 }

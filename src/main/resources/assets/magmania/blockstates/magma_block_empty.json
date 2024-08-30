@@ -1,5 +1,12 @@
 {
   "variants": {
-    "": { "model": "magmania:block/magma_block_empty" }
+    "": [
+      {
+        "model": "magmania:block/magma_block_empty", "weight": 900
+      },
+      {
+        "model": "magmania:block/magma_block_empty_animated", "weight": 100
+      }
+    ]
   }
 }

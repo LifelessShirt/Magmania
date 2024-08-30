@@ -1,5 +1,7 @@
 package com.virbound.magmania;
 
+import com.virbound.magmania.blocks.MagmaniaBlockEntities;
+import com.virbound.magmania.blocks.MagmaniaBlocks;
 import com.virbound.magmania.items.MagmaniaItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -32,14 +34,20 @@ public class Magmania implements ModInitializer {
         MagmaniaItems.initialize();
         // Magmania blocks init
         MagmaniaBlocks.initialize();
+        // Magmania Block Entities init
+        MagmaniaBlockEntities.initialize();
 
         // Register Magmania group
         Registry.register(Registries.ITEM_GROUP, MAGMANIA_KEY, MAGMANIA);
         ItemGroupEvents.modifyEntriesEvent(MAGMANIA_KEY).register(itemGroup -> {
+            // Items
             itemGroup.add(MagmaniaItems.MAGMA_COLLECTOR);
             itemGroup.add(MagmaniaItems.MAGMA_COLLECTOR_FILLED);
+            itemGroup.add(MagmaniaItems.MAGMA_ORB);
+            // Blocks
             itemGroup.add(MagmaniaBlocks.MAGMATIC_STONE.asItem());
             itemGroup.add(MagmaniaBlocks.MAGMA_EMPTY.asItem());
+            itemGroup.add(MagmaniaBlocks.MAGMATIC_TABLE.asItem());
             // ...
         });
 

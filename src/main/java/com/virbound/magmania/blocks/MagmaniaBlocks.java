@@ -1,12 +1,10 @@
-package com.virbound.magmania;
+package com.virbound.magmania.blocks;
 
+import com.virbound.magmania.Magmania;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -18,8 +16,12 @@ public class MagmaniaBlocks {
             "magmatic_stone",true
     );
     public static final Block MAGMA_EMPTY = register(
-            new Block(FabricBlockSettings.create().sounds(BlockSoundGroup.STONE).luminance(0).strength(0.1f, 0.2f).requiresTool()),
+            new Block(FabricBlockSettings.create().sounds(BlockSoundGroup.STONE).luminance(1).strength(0.1f, 0.2f).requiresTool()),
             "magma_block_empty",true
+    );
+    public static final Block MAGMATIC_TABLE = register(
+            new MagmaticTable(FabricBlockSettings.create().sounds(BlockSoundGroup.STONE).strength(0.3f, 1f).requiresTool()),
+            "magmatic_table",true
     );
 
     public static Block register(Block block, String name, boolean shouldRegisterItem) {
